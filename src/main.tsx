@@ -18,7 +18,7 @@ const router = createHashRouter([
     element: <ReactRouterNote />,
   },
   {
-    path: "*",
+    path: "/404",
     element: <NotFoundPage />,
   },
 ]);
