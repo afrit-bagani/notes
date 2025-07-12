@@ -1,27 +1,11 @@
-import { createHashRouter, RouterProvider } from "react-router-dom";
-import "github-markdown-css/github-markdown-dark.css";
-
-// local import
-import Home from "./pages/Home";
 import ReactRouterNote from "./pages/ReactRouterNote";
 
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/react-router",
-    element: <ReactRouterNote />,
-  },
-]);
-
-function App() {
+export default function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <div className="bg-gray-800 text-white rounded-2xl shadow-xl p-8 w-full max-w-3xl mx-4">
+        <ReactRouterNote />
+      </div>
+    </div>
   );
 }
-
-export default App;
