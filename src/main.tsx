@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 import ReactRouterNote from "./pages/ReactRouterNote";
+import NotFoundPage from "./pages/NotFoundPage.tsx";
 
 const router = createHashRouter([
   {
@@ -15,6 +16,10 @@ const router = createHashRouter([
   {
     path: "/react-router",
     element: <ReactRouterNote />,
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 
