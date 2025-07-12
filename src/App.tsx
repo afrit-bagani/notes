@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "github-markdown-css/github-markdown-dark.css";
 
 // local import
 import Home from "./pages/Home";
 import ReactRouterNote from "./pages/ReactRouterNote";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
